@@ -1,3 +1,4 @@
+import { varela_round } from "@/config/fonts";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={varela_round.className}>{children}</body>
     </html>
   );
 }
