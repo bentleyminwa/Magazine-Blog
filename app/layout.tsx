@@ -1,3 +1,5 @@
+import Footer from "@/components/layout/Footer/footer";
+import Navbar from "@/components/layout/Navbar/navbar";
 import { varela_round } from "@/config/fonts";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -14,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={varela_round.className}>{children}</body>
+      <body className={`${varela_round.className} antialiased`}>
+        <main className="border min-h-screen w-3/4 mx-auto">
+          <Navbar />
+          <section className="border border-amber-500 mb-10">
+            {children}
+          </section>
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }
