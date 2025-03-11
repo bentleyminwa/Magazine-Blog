@@ -17,7 +17,7 @@ export const navItems = [
 ];
 
 export const data = {
-  Hero: [
+  heroItems: [
     {
       id: 1,
       author: "Dan Peck",
@@ -34,7 +34,7 @@ export const data = {
       title: "Breakthrough in Cancer Treatment Gives New Hope",
       description:
         "Scientists have developed a new therapy that significantly improves survival rates for cancer patients.",
-      image: "/images/blog1.jpg",
+      image: "/images/blog11.jpg",
       category: "health",
       published_at: "2024-03-09T08:45:00+00:00",
     },
@@ -44,7 +44,7 @@ export const data = {
       title: "The Rise of Electric Vehicles: What’s Next?",
       description:
         "Automakers worldwide are ramping up production of electric cars, setting the stage for a greener future.",
-      image: "/images/blog2.jpg",
+      image: "/images/blog5.jpg",
       category: "technology",
       published_at: "2024-03-08T16:20:00+00:00",
     },
