@@ -4,14 +4,13 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 interface PostDetailsPageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
-export default function PostDetailsPage({ params }: PostDetailsPageProps) {
-  console.log("type of params: ", typeof params);
-  console.log("value of params: ", params);
+export default async function PostDetailsPage({
+  params,
+}: PostDetailsPageProps) {
+  const { id } = await params;
 
   const { heroItems, latestPosts, popularPosts, editorsPosts } = data;
 
@@ -22,7 +21,7 @@ export default function PostDetailsPage({ params }: PostDetailsPageProps) {
     ...editorsPosts,
   ];
 
-  const post = allPosts.find((post) => post.id === params.id);
+  const post = allPosts.find((post) => post.id === id);
 
   if (!post) return notFound();
 
