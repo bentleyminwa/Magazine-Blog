@@ -19,7 +19,7 @@ export default function EditorsPosts() {
 
             <Link
               href={`/posts/${post.id}`}
-              className="font-semibold tracking-wide text-gray-700"
+              className="font-semibold tracking-wide text-gray-700 hover:text-red-800"
             >
               {post.title}
             </Link>

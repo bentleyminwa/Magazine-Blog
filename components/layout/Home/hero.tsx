@@ -28,7 +28,7 @@ export default function HeroSection() {
           </h3>
           <Link
             href={`/posts/${heroVideo.id}`}
-            className="text-2xl font-semibold tracking-wider"
+            className="text-2xl font-semibold tracking-wider hover:text-red-800"
           >
             {heroVideo.title}
           </Link>
@@ -70,7 +70,7 @@ export default function HeroSection() {
               </h3>
               <Link
                 href={`/posts/${item.id}`}
-                className="text-xl font-semibold"
+                className="text-xl font-semibold hover:text-red-800"
               >
                 {item.title}
               </Link>

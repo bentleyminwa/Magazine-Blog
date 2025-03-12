@@ -3,20 +3,25 @@ import { data } from "@/config/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-const { heroItems, latestPosts, popularPosts, editorsPosts } = data;
+interface PostDetailsPageProps {
+  params: {
+    id: string;
+  };
+}
 
-const allPosts = [
-  ...heroItems,
-  ...latestPosts,
-  ...popularPosts,
-  ...editorsPosts,
-];
+export default function PostDetailsPage({ params }: PostDetailsPageProps) {
+  console.log("type of params: ", typeof params);
+  console.log("value of params: ", params);
 
-export default function PostDetailsPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+  const { heroItems, latestPosts, popularPosts, editorsPosts } = data;
+
+  const allPosts = [
+    ...heroItems,
+    ...latestPosts,
+    ...popularPosts,
+    ...editorsPosts,
+  ];
+
   const post = allPosts.find((post) => post.id === params.id);
 
   if (!post) return notFound();

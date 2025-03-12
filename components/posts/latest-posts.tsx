@@ -20,7 +20,7 @@ export default function LatestPosts() {
             <div className="col-span-2 space-y-3">
               <Link
                 href={`/posts/${post.id}`}
-                className="text-lg font-semibold tracking-wide text-gray-900"
+                className="text-lg font-semibold tracking-wide text-gray-900 hover:text-red-800"
               >
                 {post.title}
               </Link>
