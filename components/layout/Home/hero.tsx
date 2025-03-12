@@ -2,6 +2,7 @@ import { data } from "@/config/data";
 import Image from "next/image";
 
 import { CalendarIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function HeroSection() {
   const heroItems = data.heroItems.slice(1, 3);
@@ -25,9 +26,12 @@ export default function HeroSection() {
           <h3 className="text-xs text-red-500 font-semibold uppercase">
             {heroVideo.category}
           </h3>
-          <h2 className="text-2xl font-semibold tracking-wider">
+          <Link
+            href={`/posts/${heroVideo.id}`}
+            className="text-2xl font-semibold tracking-wider"
+          >
             {heroVideo.title}
-          </h2>
+          </Link>
           <div className="flex gap-4 text-xs">
             <h5 className="flex gap-1 items-center">
               <span>
@@ -64,7 +68,12 @@ export default function HeroSection() {
               <h3 className="text-xs text-red-500 font-semibold uppercase">
                 {item.category}
               </h3>
-              <h2 className="text-xl font-semibold">{item.title}</h2>
+              <Link
+                href={`/posts/${item.id}`}
+                className="text-xl font-semibold"
+              >
+                {item.title}
+              </Link>
               <div className="flex gap-4 text-xs">
                 <h5 className="flex gap-1 items-center">
                   <span>

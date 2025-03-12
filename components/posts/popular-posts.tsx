@@ -1,6 +1,7 @@
 import { data } from "@/config/data";
 import { CalendarIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PopularPosts() {
   const { popularPosts } = data;
@@ -17,9 +18,12 @@ export default function PopularPosts() {
               </h5>
             </div>
             <div className="col-span-2 space-y-3">
-              <h2 className="text-lg font-semibold tracking-wide text-gray-900">
+              <Link
+                href={`/posts/${post.id}`}
+                className="text-lg font-semibold tracking-wide text-gray-900"
+              >
                 {post.title}
-              </h2>
+              </Link>
               <div className="flex items-center gap-4">
                 <h5 className="flex items-center gap-1">
                   <span>

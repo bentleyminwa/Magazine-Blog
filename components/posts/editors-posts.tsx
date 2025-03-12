@@ -1,5 +1,6 @@
 import { data } from "@/config/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function EditorsPosts() {
   const { editorsPosts } = data;
@@ -16,9 +17,12 @@ export default function EditorsPosts() {
               </h5>
             </div>
 
-            <h2 className="font-semibold tracking-wide text-gray-700">
+            <Link
+              href={`/posts/${post.id}`}
+              className="font-semibold tracking-wide text-gray-700"
+            >
               {post.title}
-            </h2>
+            </Link>
 
             <hr />
           </article>

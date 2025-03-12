@@ -16,17 +16,12 @@ export const navItems = [
     href: "/about",
     label: "About",
   },
-  {
-    id: 3,
-    href: "/contact",
-    label: "Contact",
-  },
 ];
 
 export const data = {
   heroItems: [
     {
-      id: 1,
+      id: "1",
       author: "Dan Peck",
       title: "Hurricane Hanna makes landfall around 5 p.m. on Saturday.",
       description:
@@ -36,7 +31,7 @@ export const data = {
       published_at: "2020-07-26T01:04:23+00:00",
     },
     {
-      id: 2,
+      id: "2",
       author: "Emma Carter",
       title: "Breakthrough in Cancer Treatment Gives New Hope",
       description:
@@ -46,7 +41,7 @@ export const data = {
       published_at: "2024-03-09T08:45:00+00:00",
     },
     {
-      id: 3,
+      id: "3",
       author: "James Anderson",
       title: "The Rise of Electric Vehicles: What’s Next?",
       description:
@@ -58,7 +53,7 @@ export const data = {
   ],
   latestPosts: [
     {
-      id: 4,
+      id: "4",
       author: "Sarah Johnson",
       title: "Tech Giants Face New Regulations in 2024",
       description:
@@ -68,7 +63,7 @@ export const data = {
       published_at: "2024-03-10T14:30:00+00:00",
     },
     {
-      id: 5,
+      id: "5",
       author: "Michael Thompson",
       title: "Stock Market Hits Record Highs Amid Economic Recovery",
       description:
@@ -78,7 +73,7 @@ export const data = {
       published_at: "2024-03-10T10:15:00+00:00",
     },
     {
-      id: 6,
+      id: "6",
       author: "Linda Roberts",
       title: "AI in Healthcare: Revolutionizing Patient Care",
       description:
@@ -88,7 +83,7 @@ export const data = {
       published_at: "2024-03-09T12:00:00+00:00",
     },
     {
-      id: 7,
+      id: "7",
       author: "John Williams",
       title: "Climate Change: Urgent Measures Needed",
       description:
@@ -98,7 +93,7 @@ export const data = {
       published_at: "2024-03-09T09:30:00+00:00",
     },
     {
-      id: 8,
+      id: "8",
       author: "Sophia Lee",
       title: "The Future of Remote Work: Trends for 2024",
       description:
@@ -108,7 +103,7 @@ export const data = {
       published_at: "2024-03-08T15:00:00+00:00",
     },
     {
-      id: 9,
+      id: "9",
       author: "Robert Kim",
       title: "5G Technology: How It’s Changing Communication",
       description:
@@ -120,7 +115,7 @@ export const data = {
   ],
   popularPosts: [
     {
-      id: 10,
+      id: "10",
       author: "Emma Carter",
       title: "Scientists Discover Potential Cure for Alzheimer’s",
       description:
@@ -130,7 +125,7 @@ export const data = {
       published_at: "2024-03-09T08:45:00+00:00",
     },
     {
-      id: 11,
+      id: "11",
       author: "James Anderson",
       title: "AI Revolutionizing the Art Industry",
       description:
@@ -140,7 +135,7 @@ export const data = {
       published_at: "2024-03-08T16:20:00+00:00",
     },
     {
-      id: 12,
+      id: "12",
       author: "David Miller",
       title: "Climate Change: The Race to Reduce Carbon Emissions",
       description:
@@ -152,7 +147,7 @@ export const data = {
   ],
   editorsPosts: [
     {
-      id: 13,
+      id: "13",
       author: "Alice Brown",
       title: "The Impact of Social Media on Mental Health",
       description:
@@ -162,7 +157,7 @@ export const data = {
       published_at: "2024-03-07T10:00:00+00:00",
     },
     {
-      id: 14,
+      id: "14",
       author: "Mark Peterson",
       title: "Breakthroughs in Renewable Energy Sources",
       description:
@@ -172,7 +167,7 @@ export const data = {
       published_at: "2024-03-06T14:30:00+00:00",
     },
     {
-      id: 15,
+      id: "15",
       author: "Nancy White",
       title: "The Ethics of Artificial Intelligence",
       description:
@@ -180,46 +175,6 @@ export const data = {
       image: "/images/blog14.jpg",
       category: "technology",
       published_at: "2024-03-05T09:45:00+00:00",
-    },
-    {
-      id: 16,
-      author: "Chris Evans",
-      title: "The Future of Space Exploration",
-      description:
-        "NASA and private companies are preparing for manned missions to Mars.",
-      image: "/images/blog15.jpg",
-      category: "science",
-      published_at: "2024-03-04T13:00:00+00:00",
-    },
-    {
-      id: 17,
-      author: "Olivia Martin",
-      title: "The Importance of Cybersecurity in a Digital World",
-      description:
-        "As cyber threats increase, companies are investing more in security measures.",
-      image: "/images/blog16.jpg",
-      category: "technology",
-      published_at: "2024-03-03T11:20:00+00:00",
-    },
-    {
-      id: 18,
-      author: "Tom Harris",
-      title: "Exploring the Deep Ocean: New Discoveries",
-      description:
-        "Marine scientists have uncovered new species in the deep ocean.",
-      image: "/images/blog17.jpg",
-      category: "science",
-      published_at: "2024-03-02T16:15:00+00:00",
-    },
-    {
-      id: 19,
-      author: "Jackson Briggs",
-      title: "Somebody is getting whooped!",
-      description:
-        "Innovations in solar and wind power are setting new records for energy efficiency.",
-      image: "/images/blog13.jpg",
-      category: "special forces",
-      published_at: "2024-03-06T14:30:00+00:00",
     },
   ],
   categoriesData: [

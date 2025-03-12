@@ -19,7 +19,7 @@ export default function PostsSection() {
           <PopularPosts />
         </div>
       </section>
-      <section className="col-span-1 p-5 bg-white">
+      <section className="col-span-1 p-5 bg-white h-fit">
         <h2 className="mb-3 py-2 px-4 bg-gray-900 text-white font-semibold tracking-wider">
           Editors Pick
         </h2>
