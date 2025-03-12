@@ -35,7 +35,9 @@ export default function LatestPosts() {
                   <span>
                     <CalendarIcon width={18} />
                   </span>
-                  <span className="text-xs">{post.published_at}</span>
+                  <span className="text-xs">
+                    {new Date(post.published_at).toDateString()}
+                  </span>
                 </h5>
               </div>
               <p className="text-sm text-gray-800">{post.description}</p>
