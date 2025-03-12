@@ -4,7 +4,7 @@ export default function ContectFocusSection() {
   const { categoriesData } = data;
 
   return (
-    <section className="grid grid-cols-4 gap-4 p-5 my-10">
+    <section className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 my-10">
       {categoriesData.map((category) => (
         <div
           key={category.name}

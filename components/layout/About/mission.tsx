@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function MissionSection() {
   return (
-    <section className="grid grid-cols-2 h-[70vh] bg-white my-10">
-      <div className="relative w-full">
+    <section className="grid grid-cols-1 md:grid-cols-2 h-full md:h-[70vh] bg-white my-10">
+      <div className="relative w-full h-[70vh]">
         <Image
           src="/images/mission.jpg"
           alt="lady taking notes"
