@@ -10,7 +10,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex items-center gap-8 uppercase text-xs font-semibold">
+    <ul className="flex items-center gap-4 md:gap-8 uppercase text-xs font-semibold">
       {navItems.map((navItem) => (
         <li key={navItem.id}>
           <Link

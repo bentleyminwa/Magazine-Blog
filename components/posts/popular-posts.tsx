@@ -11,16 +11,16 @@ export default function PopularPosts() {
       {popularPosts.map((post) => {
         return (
           <article key={post.id} className="grid grid-cols-3 gap-5">
-            <div className="relative col-span-1 w-full h-[200px]">
+            <div className="relative col-span-1 w-full h-[150px] md:h-[200px]">
               <Image src={post.image} alt="" fill className="object-cover" />
-              <h5 className="absolute bottom-5 left-5 uppercase text-red-500 text-xs font-semibold">
+              <h5 className="absolute bottom-1 left-1 md:bottom-5 md:left-5 capitalize md:uppercase text-red-500 text-xs font-semibold">
                 {post.category}
               </h5>
             </div>
-            <div className="col-span-2 space-y-3">
+            <div className="col-span-2 space-y-2 md:space-y-3">
               <Link
                 href={`/posts/${post.id}`}
-                className="text-lg font-semibold tracking-wide text-gray-900 hover:text-red-800"
+                className="md:text-lg font-semibold tracking-wide text-gray-900 hover:text-red-800"
               >
                 {post.title}
               </Link>
