@@ -11,12 +11,7 @@ export default function LatestPosts() {
         return (
           <article key={post.id} className="grid grid-cols-3 gap-5">
             <div className="relative col-span-1 w-full h-[200px]">
-              <Image
-                src={post.image}
-                alt=""
-                fill
-                className="object-cover -z-10"
-              />
+              <Image src={post.image} alt="" fill className="object-cover" />
               <h5 className="absolute bottom-5 left-5 uppercase text-red-500 text-xs font-semibold">
                 {post.category}
               </h5>

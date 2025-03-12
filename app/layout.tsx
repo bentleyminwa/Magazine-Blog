@@ -16,12 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${varela_round.className} antialiased`}>
+      <body className={`${varela_round.className} antialiased bg-gray-200`}>
         <main className="border min-h-screen w-3/4 mx-auto">
           <Navbar />
-          <section className="border border-amber-500 mb-10">
-            {children}
-          </section>
+          <section className="mb-10">{children}</section>
           <Footer />
         </main>
       </body>

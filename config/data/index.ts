@@ -111,7 +111,7 @@ export const data = {
       published_at: "2024-03-07T11:20:00+00:00",
     },
   ],
-  Popular: [
+  popularPosts: [
     {
       id: 10,
       author: "Emma Carter",
@@ -203,6 +203,16 @@ export const data = {
       image: "/images/blog17.jpg",
       category: "science",
       published_at: "2024-03-02T16:15:00+00:00",
+    },
+    {
+      id: 19,
+      author: "Jackson Briggs",
+      title: "Somebody is getting whooped!",
+      description:
+        "Innovations in solar and wind power are setting new records for energy efficiency.",
+      image: "/images/blog13.jpg",
+      category: "special forces",
+      published_at: "2024-03-06T14:30:00+00:00",
     },
   ],
 };
