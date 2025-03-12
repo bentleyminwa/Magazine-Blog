@@ -49,7 +49,7 @@ export const data = {
       published_at: "2024-03-08T16:20:00+00:00",
     },
   ],
-  Latest: [
+  latestPosts: [
     {
       id: 4,
       author: "Sarah Johnson",
@@ -143,7 +143,7 @@ export const data = {
       published_at: "2024-03-09T09:30:00+00:00",
     },
   ],
-  Editors: [
+  editorsPosts: [
     {
       id: 13,
       author: "Alice Brown",
