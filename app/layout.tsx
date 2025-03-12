@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${varela_round.className} antialiased bg-gray-200`}>
-        <main className="border min-h-screen w-3/4 mx-auto">
+        <main className="w-3/4 mx-auto">
           <Navbar />
-          <section className="mb-10">{children}</section>
+          <section className="my-5 min-h-[85vh]">{children}</section>
           <Footer />
         </main>
       </body>

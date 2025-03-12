@@ -1,3 +1,10 @@
+import {
+  BeakerIcon,
+  ChartBarIcon,
+  CpuChipIcon,
+  ShieldCheckIcon,
+} from "@heroicons/react/24/outline";
+
 export const navItems = [
   {
     id: 1,
@@ -213,6 +220,31 @@ export const data = {
       image: "/images/blog13.jpg",
       category: "special forces",
       published_at: "2024-03-06T14:30:00+00:00",
+    },
+  ],
+  categoriesData: [
+    {
+      name: "Science",
+      description:
+        "Discover the latest breakthroughs and innovations in science.",
+      icon: <BeakerIcon width={40} />,
+    },
+    {
+      name: "Technology",
+      description:
+        "Stay updated with cutting-edge advancements in tech and AI.",
+      icon: <CpuChipIcon width={40} />,
+    },
+    {
+      name: "Health",
+      description:
+        "Explore tips, research, and trends for a healthier lifestyle.",
+      icon: <ShieldCheckIcon width={40} />,
+    },
+    {
+      name: "Business",
+      description: "Insights on markets, startups, and financial trends.",
+      icon: <ChartBarIcon width={40} />,
     },
   ],
 };
